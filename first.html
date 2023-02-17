@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+     $(document).ready(
+         function ()
+         {
+             $("button#slideUp").click(
+                 function ()
+                 {
+                     $("#myImg1").slideUp(1000);
+                    
+                 }
+             );
+             $("button#slideDown").click(
+                 function ()
+                 {
+                     $("#myImg1").slideDown(2000);
+                    
+                 }
+             );
+         }
+     );
+    </script>
+    
+</head>
+<body>
+    <img id="myImg1" src="Images\nature1.jpg" height="200px"
+      width="200px"/>
+   
+      <button id="slideUp">Side Image1</button>
+      <button id="slideDown">Side Image1</button>
+   
+    
+</body>
+</html>
